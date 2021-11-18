@@ -6,14 +6,14 @@
 
 .background-nav {
   background-color: $nav-bg-color;
-  width: 100%;
+  opacity: 95%;
+  width: 100vw;
+  position: fixed;
 }
 
 .global-nav {
-  background-color: $nav-bg-color;
   margin: 0 auto;
   max-width: 980px;
-  padding: 0 22px;
 
   ul {
     cursor: pointer;
@@ -22,22 +22,27 @@
     height: 44px;
     justify-content: space-around;
   }
+
   &-item {
     list-style: none;
     font-size: 12px;
-    color: $light-grey-text;
+    color: $white-text;
+    opacity: 80%;
+    padding: 0 8px;
+  }
+
+  &-item:hover {
+    opacity: 100%;
   }
 
   a {
-    color: $light-grey-text;
+    color: $white-text;
+    opacity: 80%;
     text-decoration: none;
   }
 
   a:hover {
-    color: $white-text;
-  }
-  &-item:hover {
-    color: $white-text;
+    opacity: 100%;
   }
 }
 
@@ -46,6 +51,7 @@
 .shop-now-menu {
   background-color: $shop-now-menu-bg-color;
   height: 44px;
+
   p {
     color: $white-text2;
     font-size: 14px;
@@ -55,13 +61,20 @@
     cursor: pointer;
     padding: 0 5px;
   }
+
   &-link a {
     color: $white-text2;
     text-decoration: none;
     font-size: 14px;
   }
 
-  &-link a:hover {
+  &-link:hover a {
     text-decoration: underline;
   }
+}
+
+// ! section 1
+
+.section1 {
+  background-color: $section1-bg-color;
 }
