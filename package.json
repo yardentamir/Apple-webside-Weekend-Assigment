@@ -1,0 +1,24 @@
+{
+  "name": "Apple-webside-Weekend-Assigment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yardentamir/Apple-webside-Weekend-Assigment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yardentamir/Apple-webside-Weekend-Assigment/issues"
+  },
+  "homepage": "https://github.com/yardentamir/Apple-webside-Weekend-Assigment#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
