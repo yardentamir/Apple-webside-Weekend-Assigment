@@ -1,2 +1,60 @@
+@font-face {
+  font-family: sfFont;
+  src: url(/fonts/sf-pro-text_regular.woff2); }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
 body {
-  background: black; }
+  font-family: "sfFont";
+  font-weight: 400; }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.background-nav {
+  background-color: #333333;
+  width: 100%; }
+
+.global-nav {
+  background-color: #333333;
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 22px; }
+  .global-nav ul {
+    cursor: pointer;
+    margin: 0 -8px;
+    width: auto;
+    height: 44px;
+    justify-content: space-around; }
+  .global-nav-item {
+    list-style: none;
+    font-size: 12px;
+    color: #d6d6d6; }
+  .global-nav a {
+    color: #d6d6d6;
+    text-decoration: none; }
+  .global-nav a:hover {
+    color: #f5f5f7; }
+  .global-nav-item:hover {
+    color: #f5f5f7; }
+
+.shop-now-menu {
+  background-color: #e34140;
+  height: 44px; }
+  .shop-now-menu p {
+    color: #ffffff;
+    font-size: 14px; }
+  .shop-now-menu-link {
+    cursor: pointer;
+    padding: 0 5px; }
+  .shop-now-menu-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px; }
+  .shop-now-menu-link a:hover {
+    text-decoration: underline; }

@@ -1,17 +1,67 @@
 @import "variables";
 @import "fonts";
+@import "utilities";
 
-body {
-  background: black;
+// ! main navbar
+
+.background-nav {
+  background-color: $nav-bg-color;
+  width: 100%;
 }
 
 .global-nav {
+  background-color: $nav-bg-color;
   margin: 0 auto;
   max-width: 980px;
-  height: 10px;
   padding: 0 22px;
-  position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
-  color: white;
+
+  ul {
+    cursor: pointer;
+    margin: 0 -8px;
+    width: auto;
+    height: 44px;
+    justify-content: space-around;
+  }
+  &-item {
+    list-style: none;
+    font-size: 12px;
+    color: $light-grey-text;
+  }
+
+  a {
+    color: $light-grey-text;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $white-text;
+  }
+  &-item:hover {
+    color: $white-text;
+  }
+}
+
+// ! second navbar
+
+.shop-now-menu {
+  background-color: $shop-now-menu-bg-color;
+  height: 44px;
+  p {
+    color: $white-text2;
+    font-size: 14px;
+  }
+
+  &-link {
+    cursor: pointer;
+    padding: 0 5px;
+  }
+  &-link a {
+    color: $white-text2;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  &-link a:hover {
+    text-decoration: underline;
+  }
 }
