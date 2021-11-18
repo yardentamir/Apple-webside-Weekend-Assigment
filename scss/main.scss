@@ -1,3 +1,17 @@
+@import "variables";
+@import "fonts";
+
 body {
   background: black;
+}
+
+.global-nav {
+  margin: 0 auto;
+  max-width: 980px;
+  height: 10px;
+  padding: 0 22px;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white;
 }
