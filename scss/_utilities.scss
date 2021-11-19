@@ -5,8 +5,18 @@
 }
 
 body {
-  font-family: "sfFont";
+  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
 }
 
 .flex-center {
@@ -18,4 +28,29 @@ body {
 .section-90vh {
   height: 90vh;
   width: 100%;
+}
+
+.icon-chevron-right {
+  position: relative;
+  text-decoration: none;
+}
+
+.icon-chevron-right:hover {
+  text-decoration: underline;
+}
+
+.icon-chevron-right::after {
+  content: ">";
+  position: absolute;
+  padding-left: 0.3em;
+}
+
+.blue-links {
+  margin-top: 9px;
+  display: inline-block;
+  font-size: 21px;
+  line-height: 1.381;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
 }

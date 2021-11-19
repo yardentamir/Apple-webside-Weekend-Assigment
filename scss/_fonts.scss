@@ -1,4 +1,19 @@
 @font-face {
-  font-family: sfFont;
-  src: url(/fonts/sf-pro-text_regular.woff2);
+  font-family: "SF Pro Text";
+  src: url("/assets/fonts/sf-pro-text_regular.woff2");
+}
+
+@font-face {
+  font-family: "sfFontBold";
+  src: url("/assets/fonts/sf-pro-text_semibold.woff2");
+}
+
+@font-face {
+  font-family: "sfBoldFontDisBold";
+  src: url("/assets/fonts/sf-pro-display_semibold.woff2");
+}
+
+@font-face {
+  font-family: "sfBoldFontDis";
+  src: url("/assets/fonts/sf-pro-display_regular.woff2");
 }
