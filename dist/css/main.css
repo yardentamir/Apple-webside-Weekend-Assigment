@@ -111,7 +111,9 @@ hr {
 
 .make-grid {
   display: grid;
-  width: 100%; }
+  width: 100%;
+  padding: 10px;
+  padding-top: 0; }
 
 .footer-nav {
   flex-basis: 25%; }
@@ -179,7 +181,7 @@ hr {
   gap: 10px;
   text-align: center; }
   .grid-galery-1-inner-sec {
-    height: 600px;
+    height: 520px;
     width: 100%;
     object-fit: cover;
     position: relative;
