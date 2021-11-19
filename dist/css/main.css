@@ -35,6 +35,11 @@ h6 {
   font-family: "sfBoldFontDisBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400; }
 
+ul,
+a {
+  text-decoration: none;
+  list-style-type: none; }
+
 h2 {
   margin-top: 20px;
   font-size: 56px;
@@ -50,10 +55,22 @@ h3 {
 section {
   text-align: center; }
 
+hr {
+  height: 1px;
+  background-color: #d2d2d7;
+  border: none; }
+
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.flex-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1em;
+  justify-content: space-between; }
 
 .section-90vh {
   height: 580px;
@@ -63,8 +80,7 @@ section {
   margin-top: 10px; }
 
 .icon-chevron-right {
-  position: relative;
-  text-decoration: none; }
+  position: relative; }
 
 .icon-chevron-right:hover {
   text-decoration: underline; }
@@ -83,7 +99,7 @@ section {
   text-align: center;
   margin: 0 22px;
   margin-top: 9px;
-  color: #1371d0; }
+  color: #06c; }
 
 .bg-fit {
   background-size: cover;
@@ -97,47 +113,17 @@ section {
   display: grid;
   width: 100%; }
 
-.background-nav {
-  background-color: #333333;
-  opacity: 0.98; }
+.footer-nav {
+  flex-basis: 25%; }
+  .footer-nav li {
+    padding-bottom: 0.8em; }
+  .footer-nav ul li a {
+    color: #424245; }
+  .footer-nav ul li a:hover {
+    text-decoration: underline; }
 
-.global-nav {
-  margin: 0 auto;
-  max-width: 980px; }
-  .global-nav ul {
-    cursor: pointer;
-    margin: 0 -8px;
-    width: auto;
-    height: 44px;
-    justify-content: space-around; }
-  .global-nav-item {
-    list-style: none;
-    font-size: 12px;
-    color: #f5f5f7;
-    opacity: 0.8;
-    padding: 0 8px; }
-  .global-nav-item:hover {
-    opacity: 1; }
-  .global-nav a {
-    color: #f5f5f7;
-    opacity: 0.8;
-    text-decoration: none; }
-  .global-nav a:hover {
-    opacity: 1; }
-
-.shop-now-menu {
-  background-color: #e34140;
-  height: 44px; }
-  .shop-now-menu p {
-    color: #f5f5f7;
-    font-size: 14px;
-    padding: 12px 0; }
-  .shop-now-menu-link {
-    cursor: pointer;
-    padding: 0 5px; }
-  .shop-now-menu a {
-    color: #f5f5f7;
-    font-size: 14px; }
+.left-border {
+  border-left: 1px solid #d2d2d7; }
 
 .section-1 {
   background-color: #fbedf9;
@@ -176,3 +162,110 @@ section {
     color: #f5f5f7; }
   .section-3-subtitle {
     color: #fbc0e9; }
+
+.grid-galery-1 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center; }
+  .grid-galery-1-inner-sec {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    position: relative; }
+  .grid-galery-1-mac-book {
+    background-image: url("/assets/images/tile_macbookpro__cx0ur0qg9biq_large_2x.jpg"); }
+  .grid-galery-1-airPods {
+    background-image: url("/assets/images/tile_airpods__fuv6vgn42y2q_large_2x.jpg"); }
+  .grid-galery-1-homePods {
+    background-image: url("/assets/images/tile_homepod_mini__b73w4z3ljymu_large_2x.jpg"); }
+  .grid-galery-1-watch {
+    background-image: url("/assets/images/tile_watch__e9n11b6m6yq2_large_2x.jpg"); }
+  .grid-galery-1-card {
+    background-image: url("/assets/images/tile__cauwwcyyn9hy_medium_2x.jpg"); }
+  .grid-galery-1-tv {
+    background-image: url("/assets/images/promo_dickinson__c9ea4l2f5rki_medium_2x.jpg"); }
+
+.bottom-inner-galery-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 25px; }
+
+.background-nav {
+  background-color: #333333;
+  opacity: 0.98; }
+
+.global-nav {
+  margin: 0 auto;
+  max-width: 980px; }
+  .global-nav ul {
+    cursor: pointer;
+    margin: 0 -8px;
+    width: auto;
+    height: 44px;
+    justify-content: space-around; }
+  .global-nav-item {
+    list-style: none;
+    font-size: 12px;
+    color: #f5f5f7;
+    opacity: 0.8;
+    padding: 0 8px; }
+  .global-nav-item:hover {
+    opacity: 1; }
+  .global-nav a {
+    color: #f5f5f7;
+    opacity: 0.8; }
+  .global-nav a:hover {
+    opacity: 1; }
+
+.shop-now-menu {
+  background-color: #e34140;
+  height: 44px; }
+  .shop-now-menu p {
+    color: #f5f5f7;
+    font-size: 14px;
+    padding: 12px 0; }
+  .shop-now-menu-link {
+    cursor: pointer;
+    padding: 0 5px; }
+  .shop-now-menu a {
+    color: #f5f5f7;
+    font-size: 14px; }
+
+.main-footer {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 15px 22px;
+  font-size: 12px;
+  line-height: 1.33337;
+  color: #6e6e73; }
+  .main-footer-section {
+    color: #6e6e73; }
+  .main-footer-bottom {
+    padding: 17px 0 21px; }
+    .main-footer-bottom p {
+      margin-bottom: 7px;
+      padding-bottom: 8px; }
+    .main-footer-bottom li a {
+      margin-right: 7px;
+      padding-left: 10px;
+      display: inline-block;
+      white-space: nowrap; }
+  .main-footer li {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text";
+    text-align: left; }
+  .main-footer h3 {
+    margin-bottom: 0.8em;
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px;
+    color: #1d1d1f; }
+
+.upper-nav li {
+  padding-bottom: 0.8em; }
+
+.footer-bg {
+  background-color: #f5f5f7; }

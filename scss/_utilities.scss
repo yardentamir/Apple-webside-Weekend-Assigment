@@ -23,6 +23,12 @@ h6 {
   font-weight: 400;
 }
 
+ul,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 h2 {
   margin-top: 20px;
   font-size: 56px;
@@ -40,11 +46,24 @@ h3 {
 section {
   text-align: center;
 }
+hr {
+  height: 1px;
+  background-color: $footer-border-color;
+  border: none;
+}
 
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1em;
+  justify-content: space-between;
 }
 
 .section-90vh {
@@ -58,7 +77,6 @@ section {
 
 .icon-chevron-right {
   position: relative;
-  text-decoration: none;
 }
 
 .icon-chevron-right:hover {
@@ -83,6 +101,7 @@ section {
   margin-top: 9px;
   color: $link-text;
 }
+
 .bg-fit {
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,4 +115,23 @@ section {
 .make-grid {
   display: grid;
   width: 100%;
+}
+
+.footer-nav {
+  flex-basis: 25%;
+
+  li {
+    padding-bottom: 0.8em;
+  }
+
+  ul li a {
+    color: $footer-link-color;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+}
+.left-border {
+  border-left: 1px solid $footer-border-color;
 }

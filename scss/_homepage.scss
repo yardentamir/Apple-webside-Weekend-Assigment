@@ -1,0 +1,104 @@
+// ! section 1
+
+.section-1 {
+  background-color: $section1-bg-color;
+  text-align: center;
+
+  &-apple-logo {
+    background-image: url("/assets/images/logo__dcojfwkzna2q_large_2x.png");
+    width: 70px;
+    height: 88px;
+    background-size: 70px 88px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
+  &-content {
+    padding-top: 29px;
+  }
+}
+
+.section-1-imgs-wrapper {
+  figure {
+    width: 289px;
+    height: 281px;
+    background-size: 289px 281px;
+    background-repeat: no-repeat;
+  }
+
+  &-figure1 {
+    background-image: url("/assets/images/iphone__cyamwsdph26a_large_2x.png");
+  }
+  &-figure2 {
+    background-image: url("/assets/images/airpods__b0941p5gmwj6_large_2x.png");
+  }
+  &-figure3 {
+    background-image: url("/assets/images/ipad__bq6djchifrbm_large_2x.png");
+  }
+}
+
+// ! section 2
+
+.section-2 {
+  background-image: url("/assets/images/hero_iphone_13pro__dhnsegysa42u_large_2x.jpg");
+}
+
+// ! section 3
+
+.section-3 {
+  background-image: url("/assets/images/hero_iphone_13__f194u1rdooeq_largetall_2x.jpg");
+
+  &-headline {
+    color: $white-text;
+  }
+
+  &-subtitle {
+    color: $section3-text-color;
+  }
+}
+
+// ! gallery section 4
+
+.grid-galery-1 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+
+  &-inner-sec {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  &-mac-book {
+    background-image: url("/assets/images/tile_macbookpro__cx0ur0qg9biq_large_2x.jpg");
+  }
+
+  &-airPods {
+    background-image: url("/assets/images/tile_airpods__fuv6vgn42y2q_large_2x.jpg");
+  }
+
+  &-homePods {
+    background-image: url("/assets/images/tile_homepod_mini__b73w4z3ljymu_large_2x.jpg");
+  }
+
+  &-watch {
+    background-image: url("/assets/images/tile_watch__e9n11b6m6yq2_large_2x.jpg");
+  }
+
+  &-card {
+    background-image: url("/assets/images/tile__cauwwcyyn9hy_medium_2x.jpg");
+  }
+
+  &-tv {
+    background-image: url("/assets/images/promo_dickinson__c9ea4l2f5rki_medium_2x.jpg");
+  }
+}
+
+.bottom-inner-galery-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+}

@@ -1,6 +1,7 @@
 @import "variables";
 @import "fonts";
 @import "utilities";
+@import "homepage";
 
 // ! main navbar
 
@@ -36,7 +37,6 @@
   a {
     color: $white-text;
     opacity: 0.8;
-    text-decoration: none;
   }
 
   a:hover {
@@ -67,61 +67,59 @@
   }
 }
 
-// ! section 1
+// ! footer
 
-.section-1 {
-  background-color: $section1-bg-color;
-  text-align: center;
+.main-footer {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 15px 22px;
+  font-size: 12px;
+  line-height: 1.33337;
+  color: $footer-text-color;
 
-  &-apple-logo {
-    background-image: url("/assets/images/logo__dcojfwkzna2q_large_2x.png");
-    width: 70px;
-    height: 88px;
-    background-size: 70px 88px;
-    background-repeat: no-repeat;
-    margin: 0 auto;
+  &-section {
+    color: $footer-text-color;
   }
 
-  &-content {
-    padding-top: 29px;
+  &-bottom {
+    padding: 17px 0 21px;
+
+    p {
+      margin-bottom: 7px;
+      padding-bottom: 8px;
+    }
+
+    li a {
+      margin-right: 7px;
+      padding-left: 10px;
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+
+  li {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text";
+    text-align: left;
+  }
+
+  h3 {
+    margin-bottom: 0.8em;
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px;
+    color: $black-text;
   }
 }
 
-.section-1-imgs-wrapper {
-  figure {
-    width: 289px;
-    height: 281px;
-    background-size: 289px 281px;
-    background-repeat: no-repeat;
-  }
-
-  &-figure1 {
-    background-image: url("/assets/images/iphone__cyamwsdph26a_large_2x.png");
-  }
-  &-figure2 {
-    background-image: url("/assets/images/airpods__b0941p5gmwj6_large_2x.png");
-  }
-  &-figure3 {
-    background-image: url("/assets/images/ipad__bq6djchifrbm_large_2x.png");
+.upper-nav {
+  li {
+    padding-bottom: 0.8em;
   }
 }
 
-// ! section 2
-
-.section-2 {
-  background-image: url("/assets/images/hero_iphone_13pro__dhnsegysa42u_large_2x.jpg");
-}
-
-// ! section 3
-
-.section-3 {
-  background-image: url("/assets/images/hero_iphone_13__f194u1rdooeq_largetall_2x.jpg");
-
-  &-headline {
-    color: $white-text;
-  }
-
-  &-subtitle {
-    color: $section3-text-color;
-  }
+.footer-bg {
+  background-color: $footer-bg-color;
 }
