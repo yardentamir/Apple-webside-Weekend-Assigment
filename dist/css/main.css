@@ -21,15 +21,34 @@
 
 body {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.47059; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: "sfBoldFontDisBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400; }
 
 h2 {
   margin-top: 20px;
   font-size: 56px;
   line-height: 1.07143;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  letter-spacing: -0.005em; }
+
+h3 {
+  font-size: 28px;
+  line-height: 1.10722;
+  letter-spacing: 0.004em;
+  margin-top: 6px; }
+
+section {
+  text-align: center; }
 
 .flex-center {
   display: flex;
@@ -37,8 +56,11 @@ h2 {
   align-items: center; }
 
 .section-90vh {
-  height: 90vh;
+  height: 580px;
   width: 100%; }
+
+.margin-sec-top {
+  margin-top: 10px; }
 
 .icon-chevron-right {
   position: relative;
@@ -53,17 +75,31 @@ h2 {
   padding-left: 0.3em; }
 
 .blue-links {
-  margin-top: 9px;
   display: inline-block;
   font-size: 21px;
   line-height: 1.381;
   letter-spacing: 0.011em;
-  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  margin: 0 22px;
+  margin-top: 9px;
+  color: #1371d0; }
+
+.bg-fit {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.content-padding {
+  padding-top: 3em; }
+
+.make-grid {
+  display: grid;
+  width: 100%; }
 
 .background-nav {
   background-color: #333333;
-  opacity: 95%;
-  width: 100vw; }
+  opacity: 0.98; }
 
 .global-nav {
   margin: 0 auto;
@@ -93,14 +129,14 @@ h2 {
   background-color: #e34140;
   height: 44px; }
   .shop-now-menu p {
-    color: #ffffff;
+    color: #f5f5f7;
     font-size: 14px;
     padding: 12px 0; }
   .shop-now-menu-link {
     cursor: pointer;
     padding: 0 5px; }
   .shop-now-menu a {
-    color: #ffffff;
+    color: #f5f5f7;
     font-size: 14px; }
 
 .section-1 {
@@ -130,3 +166,13 @@ h2 {
 
 .section-1-imgs-wrapper-figure3 {
   background-image: url("/assets/images/ipad__bq6djchifrbm_large_2x.png"); }
+
+.section-2 {
+  background-image: url("/assets/images/hero_iphone_13pro__dhnsegysa42u_large_2x.jpg"); }
+
+.section-3 {
+  background-image: url("/assets/images/hero_iphone_13__f194u1rdooeq_largetall_2x.jpg"); }
+  .section-3-headline {
+    color: #f5f5f7; }
+  .section-3-subtitle {
+    color: #fbc0e9; }

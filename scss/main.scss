@@ -6,8 +6,7 @@
 
 .background-nav {
   background-color: $nav-bg-color;
-  opacity: 95%;
-  width: 100vw;
+  opacity: 0.98;
 }
 
 .global-nav {
@@ -52,7 +51,7 @@
   height: 44px;
 
   p {
-    color: $white-text2;
+    color: $white-text;
     font-size: 14px;
     padding: 12px 0;
   }
@@ -63,7 +62,7 @@
   }
 
   a {
-    color: $white-text2;
+    color: $white-text;
     font-size: 14px;
   }
 }
@@ -81,9 +80,6 @@
     background-size: 70px 88px;
     background-repeat: no-repeat;
     margin: 0 auto;
-  }
-
-  &-headline {
   }
 
   &-content {
@@ -107,5 +103,25 @@
   }
   &-figure3 {
     background-image: url("/assets/images/ipad__bq6djchifrbm_large_2x.png");
+  }
+}
+
+// ! section 2
+
+.section-2 {
+  background-image: url("/assets/images/hero_iphone_13pro__dhnsegysa42u_large_2x.jpg");
+}
+
+// ! section 3
+
+.section-3 {
+  background-image: url("/assets/images/hero_iphone_13__f194u1rdooeq_largetall_2x.jpg");
+
+  &-headline {
+    color: $white-text;
+  }
+
+  &-subtitle {
+    color: $section3-text-color;
   }
 }

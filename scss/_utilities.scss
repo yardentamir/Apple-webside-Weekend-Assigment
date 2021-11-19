@@ -7,16 +7,38 @@
 body {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
+  font-size: 17px;
+  line-height: 1.47059;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: "sfBoldFontDisBold", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  font-weight: 400;
 }
 
 h2 {
   margin-top: 20px;
   font-size: 56px;
   line-height: 1.07143;
-  font-weight: 600;
   letter-spacing: -0.005em;
-  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.10722;
+  letter-spacing: 0.004em;
+  margin-top: 6px;
+}
+
+section {
+  text-align: center;
 }
 
 .flex-center {
@@ -26,8 +48,12 @@ h2 {
 }
 
 .section-90vh {
-  height: 90vh;
+  height: $content-height;
   width: 100%;
+}
+
+.margin-sec-top {
+  margin-top: 10px;
 }
 
 .icon-chevron-right {
@@ -46,11 +72,28 @@ h2 {
 }
 
 .blue-links {
-  margin-top: 9px;
   display: inline-block;
   font-size: 21px;
   line-height: 1.381;
   letter-spacing: 0.011em;
   font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
+  text-align: center;
+  margin: 0 22px;
+  margin-top: 9px;
+  color: $link-text;
+}
+.bg-fit {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.content-padding {
+  padding-top: $global-section-height;
+}
+
+.make-grid {
+  display: grid;
+  width: 100%;
 }
