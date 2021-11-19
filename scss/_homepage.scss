@@ -70,6 +70,7 @@
     width: 100%;
     object-fit: cover;
     position: relative;
+    padding: 2.5em 0;
   }
 
   &-mac-book {
@@ -94,6 +95,10 @@
 
   &-tv {
     background-image: url("/assets/images/promo_dickinson__c9ea4l2f5rki_medium_2x.jpg");
+
+    &-woman-icon {
+      width: 200px;
+    }
   }
 }
 
