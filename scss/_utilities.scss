@@ -120,10 +120,6 @@ hr {
 .footer-nav {
   flex-basis: 25%;
 
-  li {
-    padding-bottom: 0.8em;
-  }
-
   ul li a {
     color: $footer-link-color;
   }
@@ -134,4 +130,10 @@ hr {
 }
 .left-border {
   border-left: 1px solid $footer-border-color;
+}
+
+.flex-grow {
+  flex-grow: 2;
+  display: flex;
+  align-items: left;
 }

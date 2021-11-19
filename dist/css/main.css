@@ -115,8 +115,6 @@ hr {
 
 .footer-nav {
   flex-basis: 25%; }
-  .footer-nav li {
-    padding-bottom: 0.8em; }
   .footer-nav ul li a {
     color: #424245; }
   .footer-nav ul li a:hover {
@@ -124,6 +122,11 @@ hr {
 
 .left-border {
   border-left: 1px solid #d2d2d7; }
+
+.flex-grow {
+  flex-grow: 2;
+  display: flex;
+  align-items: left; }
 
 .section-1 {
   background-color: #fbedf9;
@@ -241,6 +244,13 @@ hr {
   color: #6e6e73; }
   .main-footer-section {
     color: #6e6e73; }
+  .main-footer li {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text";
+    text-align: left;
+    padding-bottom: 0.8em; }
   .main-footer-bottom {
     padding: 17px 0 21px; }
     .main-footer-bottom p {
@@ -251,21 +261,14 @@ hr {
       padding-left: 10px;
       display: inline-block;
       white-space: nowrap; }
-  .main-footer li {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    font-family: "SF Pro Text";
-    text-align: left; }
+    .main-footer-bottom li {
+      padding-bottom: 0; }
   .main-footer h3 {
     margin-bottom: 0.8em;
     font-size: 12px;
     text-align: left;
     line-height: 14px;
     color: #1d1d1f; }
-
-.upper-nav li {
-  padding-bottom: 0.8em; }
 
 .footer-bg {
   background-color: #f5f5f7; }
