@@ -9,6 +9,8 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 1.47059;
+  color: #333;
+  font-style: normal;
 }
 
 h1,
@@ -76,7 +78,7 @@ hr {
   justify-content: space-between;
 }
 
-.section-90vh {
+.section-height {
   height: $content-height;
   width: 100%;
 }
@@ -172,4 +174,10 @@ hr {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.arrow-down-link::after {
+  content: "˅";
+  position: absolute;
+  padding-left: 0.3em;
 }

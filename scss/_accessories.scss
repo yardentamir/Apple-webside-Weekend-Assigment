@@ -1,0 +1,40 @@
+.accessories-menu {
+  background-color: $accessories-menu-bg-color;
+  width: 100%;
+
+  &-link {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+
+  &-inner {
+    height: 55px;
+    max-width: 980px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.img-sec-fit {
+  position: absolute;
+  bottom: 0;
+  width: 1300px;
+  left: -200px;
+}
+
+.acc-section-1 {
+  background-color: #f2f2f2;
+  padding: 0px 100px;
+  &-inner {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+}

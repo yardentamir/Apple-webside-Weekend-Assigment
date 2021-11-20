@@ -2,6 +2,7 @@
 @import "fonts";
 @import "utilities";
 @import "homepage";
+@import "accessories";
 
 // ! main navbar
 
@@ -42,29 +43,6 @@
 
   a:hover {
     opacity: 1;
-  }
-}
-
-// ! second navbar
-
-.shop-now-menu {
-  background-color: $shop-now-menu-bg-color;
-  height: 44px;
-
-  p {
-    color: $white-text;
-    font-size: 14px;
-    padding: 12px 0;
-  }
-
-  &-link {
-    cursor: pointer;
-    padding: 0 5px;
-  }
-
-  a {
-    color: $white-text;
-    font-size: 14px;
   }
 }
 

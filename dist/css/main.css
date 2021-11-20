@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "SF Pro Text";
   src: url("/assets/fonts/sf-pro-text_regular.woff2"); }
@@ -23,7 +24,9 @@ body {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
-  line-height: 1.47059; }
+  line-height: 1.47059;
+  color: #333;
+  font-style: normal; }
 
 h1,
 h2,
@@ -80,7 +83,7 @@ hr {
   margin-top: 1em;
   justify-content: space-between; }
 
-.section-90vh {
+.section-height {
   height: 580px;
   width: 100%; }
 
@@ -156,6 +159,25 @@ hr {
   top: 0;
   z-index: 1; }
 
+.arrow-down-link::after {
+  content: "˅";
+  position: absolute;
+  padding-left: 0.3em; }
+
+.shop-now-menu {
+  background-color: #e34140;
+  height: 44px; }
+  .shop-now-menu p {
+    color: #f5f5f7;
+    font-size: 14px;
+    padding: 12px 0; }
+  .shop-now-menu-link {
+    cursor: pointer;
+    padding: 0 5px; }
+  .shop-now-menu a {
+    color: #f5f5f7;
+    font-size: 14px; }
+
 .section-1 {
   background-color: #fbedf9;
   text-align: center; }
@@ -225,6 +247,36 @@ hr {
   width: 100%;
   bottom: 25px; }
 
+.accessories-menu {
+  background-color: #ffff;
+  width: 100%; }
+  .accessories-menu-link {
+    padding: 0 5px;
+    font-size: 12px; }
+  .accessories-menu-inner {
+    height: 55px;
+    max-width: 980px;
+    justify-content: space-between;
+    margin: 0 auto; }
+
+.img-sec-fit {
+  position: absolute;
+  bottom: 0;
+  width: 1300px;
+  left: -200px; }
+
+.acc-section-1 {
+  background-color: #f2f2f2;
+  padding: 0px 100px; }
+  .acc-section-1-inner p {
+    text-align: center; }
+
+.img-wrapper {
+  position: relative;
+  height: 360px;
+  width: 800px;
+  overflow: hidden; }
+
 .background-nav {
   width: 100%;
   background-color: #333333;
@@ -252,20 +304,6 @@ hr {
     opacity: 0.8; }
   .global-nav a:hover {
     opacity: 1; }
-
-.shop-now-menu {
-  background-color: #e34140;
-  height: 44px; }
-  .shop-now-menu p {
-    color: #f5f5f7;
-    font-size: 14px;
-    padding: 12px 0; }
-  .shop-now-menu-link {
-    cursor: pointer;
-    padding: 0 5px; }
-  .shop-now-menu a {
-    color: #f5f5f7;
-    font-size: 14px; }
 
 .main-footer {
   margin: 0 auto;
