@@ -41,11 +41,21 @@ h3 {
   line-height: 1.10722;
   letter-spacing: 0.004em;
   margin-top: 6px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 1.10722;
+  letter-spacing: 0.004em;
+  margin-top: 6px;
+  font-weight: 100;
 }
 
 section {
   text-align: center;
 }
+
 hr {
   height: 1px;
   background-color: $footer-border-color;
@@ -89,19 +99,6 @@ hr {
   padding-left: 0.3em;
 }
 
-.blue-links {
-  display: inline-block;
-  font-size: 21px;
-  line-height: 1.381;
-  letter-spacing: 0.011em;
-  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
-  text-align: center;
-  margin: 0 22px;
-  margin-top: 9px;
-  color: $link-text;
-}
-
 .bg-fit {
   background-size: cover;
   background-repeat: no-repeat;
@@ -122,14 +119,15 @@ hr {
 .footer-nav {
   flex-basis: 25%;
 
-  ul li a {
+  a {
     color: $footer-link-color;
   }
 
-  ul li a:hover {
+  a:hover {
     text-decoration: underline;
   }
 }
+
 .left-border {
   border-left: 1px solid $footer-border-color;
 }
@@ -147,4 +145,31 @@ hr {
 
 .white-text {
   color: $white-text;
+}
+
+.blue-links-sudu {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 1.381;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  text-align: center;
+  margin: 0 22px;
+  margin-top: 9px;
+  color: $link-text;
+}
+
+.blue-links-regular {
+  color: $link-text;
+}
+
+.blue-links-regular:hover {
+  text-decoration: underline;
+}
+
+.position-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
